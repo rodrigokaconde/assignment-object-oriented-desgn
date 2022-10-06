@@ -1,0 +1,16 @@
+<div class="container p-5">
+    <form>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault01">Username</label>
+            <input name="username" type="text" class="form-control" id="validationDefault01" placeholder="username" [(ngModel)]="newContact!.username" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault02">Email</label>
+            <input name="email" type="text" class="form-control" id="validationDefault02" placeholder="email" [(ngModel)]="newContact.email"  required>
+          </div>
+        </div>
+        <button class="btn btn-secondary" type="button" (click)="cadastrar()">Save</button>
+        <button type="button" class="btn btn-warning m-5" (click)="cancel()">Cancelar</button>
+    </form>
+</div>

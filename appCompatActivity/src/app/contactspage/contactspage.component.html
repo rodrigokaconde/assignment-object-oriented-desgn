@@ -1,0 +1,13 @@
+<div class="container pt-4" style="text-align: right;">
+    <button type="button" class="btn btn-dark" routerLink="/cadastro"> + </button>
+</div>
+
+<mat-list class="container">
+    <mat-list-item *ngFor="let contact of contacts" (click)="edit(contact)">
+      <img matListAvatar src="../../assets/img/perfil.jpg" alt="...">
+      <h3 matLine> Username: {{contact.username}} </h3>
+      <p matLine>
+        <span> Email: {{contact.email}} </span>
+      </p>
+    </mat-list-item>
+  </mat-list>
