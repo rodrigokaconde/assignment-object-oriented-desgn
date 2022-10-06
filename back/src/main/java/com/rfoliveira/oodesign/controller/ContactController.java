@@ -26,7 +26,6 @@ public class ContactController {
 
     @PostMapping
     public Contact saveContact(@RequestBody Contact contact){
-        System.out.println(contact.getEmail());
         return contactService.saveContact(contact);
     }
 
